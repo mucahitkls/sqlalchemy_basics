@@ -46,7 +46,9 @@ pip install -r requirements.txt
 - If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
 ## Acknowledgements
+- sqlalchemy offical: https://docs.sqlalchemy.org/en/20/tutorial/
 - auth0 SQLAlchemy ORM Tutorial: https://auth0.com/blog/sqlalchemy-orm-tutorial-for-python-developers/
+- tutorialspoint: https://www.tutorialspoint.com/sqlalchemy/index.htm
 
 ## Contact Information
 - Your Name - kelessmucahit@gmail.com
