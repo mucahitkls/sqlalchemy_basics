@@ -14,11 +14,11 @@ for movie in movies:
     print(f"{movie.title} was released after 2015")
 
 
-tom_movies = session.query(Movie).join(Actor, Movie.actors).filter(Actor.name == 'Tom Criuse').all()
+tom_movies = session.query(Movie).join(Actor, Movie.actors).filter(Actor.name == 'Tom Cruise').all()
 
-print('### Tom Criuse movies:')
+print('### Tom Cruise movies:')
 for movie in tom_movies:
-    print(f'Tom Criuse starred in {movie.title}')
+    print(f'Tom Cruise starred in {movie.title}')
 print('')
 
 # get actors that have house in Glendale

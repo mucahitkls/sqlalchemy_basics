@@ -15,7 +15,7 @@ mission_impo = Movie("Mission Impossible", date(1996, 8, 23))
 
 # 5 - create actors
 orlando_bloom = Actor('Orlando Bloom', date(1977, 1, 13))
-tom_cruise = Actor('Tom cruise', date(1962, 7, 3))
+tom_cruise = Actor('Tom Cruise', date(1962, 7, 3))
 ving_rhames = Actor('Ving Rhames', date(1959, 5, 12))
 
 # 6 - add actors to movies
