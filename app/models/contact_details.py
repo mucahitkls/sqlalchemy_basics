@@ -8,11 +8,11 @@ class ContactDetails(Base):
 
     id = Column(Integer, primary_key=True)
     phone_number = Column(String)
-    address = Column(String)
+    address = Column(String(100), nullable=False)
     actor_id = Column(Integer, ForeignKey('actors.id'))
     actor = relationship('Actor', backref='contact_details')
 
-    def __init__(self, phone_number, address, actor):
+    def __init__(self, phone_number: str, address: str, actor):
         self.phone_number = phone_number
         self.address = address
         self.actor = actor

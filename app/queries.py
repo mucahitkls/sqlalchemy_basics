@@ -1,5 +1,5 @@
 from datetime import date
-from models import *
+from models import Actor, Movie, ContactDetails, Stuntman
 from database import LocalSession
 session = LocalSession()
 
@@ -21,7 +21,7 @@ for movie in tom_movies:
     print(f'Tom Criuse starred in {movie.title}')
 print('')
 
-# 7 - get actors that have house in Glendale
+# get actors that have house in Glendale
 glendale_stars = session.query(Actor).join(ContactDetails).filter(ContactDetails.address.ilike('%glendale%')).all()
 
 print('### Actors that live in Glendale:')
